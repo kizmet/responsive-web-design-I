@@ -218,7 +218,7 @@ img {
     flex-wrap: wrap;
     border-top: 1px solid black;
     padding:10px 0px;
-    margin:10px;
+    margin: 5% auto;
     justify-content: space-between;
   }
   .flexbox div {
