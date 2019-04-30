@@ -179,6 +179,8 @@ h5 {
   padding: 2%;
 }
 
+
+
 @media (max-width: 800px) {
   .header-flexbox {
     flex-wrap: wrap;
@@ -201,12 +203,9 @@ h5 {
 @media (max-width: 500px) {
     .header-flexbox {
       flex-wrap: wrap;
-      flex-direction: column;
     }  
     .site-nav {
-      order: 2;
       margin:0;
-      
       padding:0px;
     }
     .site-nav ul {
@@ -215,23 +214,19 @@ h5 {
         display: flex;
         margin: 0;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        
-        
       }    
+    .site-nav ul:last-child {
+        border-bottom: 1px solid lightgray;
+    }
     .site-nav li {
-        border-top: 1px solid lightgrey;
-        
-        font-size: 32px;
-        align-self: center;
-        align-items: center;
-        justify-content: center;
-        
+        width: 100%;
+        height: auto;
     }
     .site-nav a {
         display: inline-block;
-        
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid lightgrey;
     }    
     .cta-flexboxes {
       flex-wrap: wrap;
@@ -239,6 +234,12 @@ h5 {
     }
     .cta-flexboxes .cta-box:last-child {
         display: none;
+    }
+    .about-flexboxes {
+        flex-direction: column;
+    }
+    .bottom-flexboxes {
+        flex-direction: column;
     }
   }
 
@@ -278,15 +279,17 @@ img {
 
 .about-flexboxes {
   border-top: 1px solid black;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+ 
+  margin: 0px;
   display: flex;
+  align-items: center;
+  text-align: left;
 }
 
 .about-flexbox-box {
-    width: 48%;
+    /* width: 48%; */
     padding: 2%;
-    padding-bottom: 20px;  
+    
 
 }
 .middle-img {
@@ -301,13 +304,13 @@ img {
   margin: 0px;
   display: flex;
   align-items: center;
-  text-align: center;
   border-bottom: 1px solid black;
   text-align: left;
+  
 }
 
 .bottom-box {
-  margin: 20px;
+  margin: 0px;
   padding: 2%;
 }
 
@@ -317,7 +320,7 @@ img {
   line-height: 20px;
 }
 .contact-flexbox div {
-    margin: 20px;
+    margin: 0px;
     padding: 2%;
 }
 
